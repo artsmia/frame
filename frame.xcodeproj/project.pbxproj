@@ -22,6 +22,8 @@
 		B468CEC719082B3F0003D8E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B468CEA619082B3F0003D8E9 /* UIKit.framework */; };
 		B468CECF19082B3F0003D8E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B468CECD19082B3F0003D8E9 /* InfoPlist.strings */; };
 		B468CED119082B3F0003D8E9 /* frameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B468CED019082B3F0003D8E9 /* frameTests.m */; };
+		B468CEDC1909A7EB0003D8E9 /* UITouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B468CEDB1909A7EB0003D8E9 /* UITouchGestureRecognizer.m */; };
+		B468CEDE1909B57E0003D8E9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B468CEDD1909B57E0003D8E9 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		B468CECC19082B3F0003D8E9 /* frameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "frameTests-Info.plist"; sourceTree = "<group>"; };
 		B468CECE19082B3F0003D8E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B468CED019082B3F0003D8E9 /* frameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frameTests.m; sourceTree = "<group>"; };
+		B468CEDA1909A7EB0003D8E9 /* UITouchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGestureRecognizer.h; sourceTree = "<group>"; };
+		B468CEDB1909A7EB0003D8E9 /* UITouchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITouchGestureRecognizer.m; sourceTree = "<group>"; };
+		B468CEDD1909B57E0003D8E9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B468CEDE1909B57E0003D8E9 /* MediaPlayer.framework in Frameworks */,
 				B468CEA519082B3F0003D8E9 /* CoreGraphics.framework in Frameworks */,
 				B468CEA719082B3F0003D8E9 /* UIKit.framework in Frameworks */,
 				B468CEA319082B3F0003D8E9 /* Foundation.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		B468CEA119082B3F0003D8E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B468CEDD1909B57E0003D8E9 /* MediaPlayer.framework */,
 				B468CEA219082B3F0003D8E9 /* Foundation.framework */,
 				B468CEA419082B3F0003D8E9 /* CoreGraphics.framework */,
 				B468CEA619082B3F0003D8E9 /* UIKit.framework */,
@@ -120,6 +127,8 @@
 				B468CEB719082B3F0003D8E9 /* Main_iPad.storyboard */,
 				B468CEBA19082B3F0003D8E9 /* ViewController.h */,
 				B468CEBB19082B3F0003D8E9 /* ViewController.m */,
+				B468CEDA1909A7EB0003D8E9 /* UITouchGestureRecognizer.h */,
+				B468CEDB1909A7EB0003D8E9 /* UITouchGestureRecognizer.m */,
 				B468CEBD19082B3F0003D8E9 /* Images.xcassets */,
 				B468CEA919082B3F0003D8E9 /* Supporting Files */,
 			);
@@ -254,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B468CEBC19082B3F0003D8E9 /* ViewController.m in Sources */,
+				B468CEDC1909A7EB0003D8E9 /* UITouchGestureRecognizer.m in Sources */,
 				B468CEB319082B3F0003D8E9 /* AppDelegate.m in Sources */,
 				B468CEAF19082B3F0003D8E9 /* main.m in Sources */,
 			);
@@ -474,6 +484,7 @@
 				B468CED619082B3F0003D8E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B468CED719082B3F0003D8E9 /* Build configuration list for PBXNativeTarget "frameTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +493,7 @@
 				B468CED919082B3F0003D8E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
