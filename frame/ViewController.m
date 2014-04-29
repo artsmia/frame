@@ -27,7 +27,7 @@
     [[_canvas scrollView] setBounces: NO];
     [self becomeFirstResponder];
 
-    [self watchForTouches];
+    [self mirrorWebViewGestureEvents];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +46,7 @@
 #define kMaxIdleTimeSeconds 120.0
 
 // delegate touch interaction in the UIWebView to `resetIdleTimer`, which resets the timer on each interaction
-- (void)watchForTouches {
+- (void)mirrorWebViewGestureEvents {
     UITouchGestureRecognizer *webViewInteraction = [[UITouchGestureRecognizer alloc]initWithTarget:self action:@selector(resetIdleTimer)];
     webViewInteraction.delegate = self;
     webViewInteraction.cancelsTouchesInView = NO;
@@ -58,7 +58,7 @@
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
-    return YES;
+    return YES; // both views handle the same gestures
 }
 
 - (void)resetIdleTimer {
